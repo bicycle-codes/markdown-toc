@@ -7,6 +7,7 @@
   "scripts": {
     "toc": "markdown-toc --maxdepth 3 -i README.md",
     "version": "npm run toc && auto-changelog -p --template keepachangelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md README.md",
+    "postversion": "git push --follow-tags && npm publish --access=public",
     "test": "mocha"
   },
   "dependencies": {
