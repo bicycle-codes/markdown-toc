@@ -8,8 +8,6 @@ Please consider following this project's author, [Jon Schlinkert](https://github
 
 This is a fork of [jonschlinkert/markdown-toc](https://github.com/jonschlinkert/markdown-toc).
 
-## Contents
-
 <details>
 <summary><h2>Contents</h2></summary>
 
