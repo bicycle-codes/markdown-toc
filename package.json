@@ -5,28 +5,27 @@
   "homepage": "https://github.com/jonschlinkert/markdown-toc",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "scripts": {
-    "toc": "node ./cli.js --maxdepth 3 -i README.md",
-    "version": "npm run toc && auto-changelog -p --template keepachangelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md README.md",
+    "version": "npm run changelog && git add CHANGELOG.md",
+    "changelog": "auto-changelog -p --template keepachangelog --breaking-pattern 'BREAKING CHANGE:'",
     "postversion": "git push --follow-tags && npm publish --access=public",
     "test": "mocha"
   },
   "dependencies": {
     "concat-stream": "^1.5.2",
     "diacritics-map": "^0.1.0",
-    "gray-matter": "^3.1.1",
+    "gray-matter": "^4.0.3",
     "lazy-cache": "^2.0.2",
     "list-item": "^1.1.1",
     "markdown-link": "^0.1.1",
     "minimist": "^1.2.0",
     "mixin-deep": "^1.1.3",
-    "object.pick": "^1.2.0",
+    "object.pick": "^1.3.0",
     "remarkable": "^1.7.1",
     "repeat-string": "^1.6.1",
     "strip-color": "^0.1.0"
   },
   "devDependencies": {
     "auto-changelog": "^2.5.0",
-    "gulp-format-md": "^2.0.0",
     "mocha": "^10.2.0"
   },
   "contributors": [
